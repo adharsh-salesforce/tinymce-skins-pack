@@ -1,0 +1,20 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "number-leading-zero": "never",
+    "at-rule-empty-line-before": ["always", { "ignoreAtRules": "import" }],
+    "function-calc-no-invalid": null,
+    "indentation":null,
+    "comment-empty-line-before":null,
+    "no-eol-whitespace":null,
+    "function-comma-space-after":null,
+    "rule-empty-line-before":null,
+    "block-opening-brace-newline-after":null,
+    "block-opening-brace-space-before":null,
+    "declaration-empty-line-before":null,
+    "no-empty-source":null
+  }
+}

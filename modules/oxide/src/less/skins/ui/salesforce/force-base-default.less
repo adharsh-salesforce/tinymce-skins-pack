@@ -1,0 +1,810 @@
+@kb-force-border-width-thin: 1px;
+@kb-force-border-width-thick: 2px;
+@kb-force-border-stroke-width-thin: 1px;
+@kb-force-border-stroke-width-thick: 2px;
+@kb-force-spacing-none: 0;
+@kb-force-spacing-xxx-small: .125rem;
+@kb-force-spacing-xx-small: .25rem;
+@kb-force-spacing-x-small: .5rem;
+@kb-force-spacing-small: .75rem;
+@kb-force-spacing-medium: 1rem;
+@kb-force-spacing-large: 1.5rem;
+@kb-force-spacing-x-large: 2rem;
+@kb-force-spacing-xx-large: 3rem;
+// Generic sizing token scale for UI components.
+@kb-force-size-xx-small: 6rem;
+// Generic sizing token scale for UI components.
+@kb-force-size-x-small: 12rem;
+// Generic sizing token scale for UI components.
+@kb-force-size-small: 15rem;
+// Generic sizing token scale for UI components.
+@kb-force-size-medium: 20rem;
+// Generic sizing token scale for UI components.
+@kb-force-size-large: 25rem;
+// Generic sizing token scale for UI components.
+@kb-force-size-x-large: 40rem;
+// Generic sizing token scale for UI components.
+@kb-force-size-xx-large: 60rem;
+// Small utility icon without border.
+@kb-force-square-icon-utility-small: 1rem;
+// Medium utility icon without border.
+@kb-force-square-icon-utility-medium: 1.25rem;
+// Large utility icon without border.
+@kb-force-square-icon-utility-large: 1.5rem;
+// Anchor: Outer colored tile
+@kb-force-square-icon-large-boundary: 3rem;
+// Anchor: avatar
+@kb-force-square-icon-large-boundary-alt: 5rem;
+// Anchor: Icon content (white shape)
+@kb-force-square-icon-large-content: 2rem;
+// Use squareIconMediumBoundary
+@kb-force-square-icon-medium: 2.375rem;
+// Stage left & actions: Outer colored tile
+@kb-force-square-icon-medium-boundary: 2rem;
+// Icon button boundary.
+@kb-force-square-icon-medium-boundary-alt: 2.25rem;
+// Stage left & actions: Icon content (white shape)
+@kb-force-square-icon-medium-content: 1rem;
+// Alternate medium tap target size
+@kb-force-square-icon-medium-content-alt: .875rem;
+// Small tap target size
+@kb-force-square-icon-small: 1rem;
+// Search Results: Outer colored tile
+@kb-force-square-icon-small-boundary: 1.5rem;
+// Search Results: Icon content (white shape)
+@kb-force-square-icon-small-content: .75rem;
+// Very small icon button boundary.
+@kb-force-square-icon-x-small-boundary: 1.25rem;
+// Very small icons in icon buttons.
+@kb-force-square-icon-x-small-content: .5rem;
+// Very very small icon button boundary.
+@kb-force-square-icon-xx-small-boundary: 1rem;
+// Very small icons to replace kb-force font with temporary override.
+@kb-force-square-icon-xx-small-content: .875rem;
+// Large tap target size.
+@kb-force-square-icon-large: 3.125rem;
+// Minimum height of a pill.
+@kb-force-height-pill: 1.625rem;
+// Brand fill color
+@kb-force-fill-brand: rgb(0, 112, 210);
+// Brand hover fill color
+@kb-force-fill-brand-hover: rgb(0, 95, 178);
+// Brand active fill color
+@kb-force-fill-brand-active: rgb(22, 50, 92);
+// Header button icon color
+@kb-force-fill-header-button: rgb(159, 170, 181);
+// Hovered header button icon color
+@kb-force-fill-header-button-hover: rgb(0, 95, 178);
+// Use for large headings only.
+@kb-force-font-weight-light: 300;
+// Most all body copy.
+@kb-force-font-weight-regular: 400;
+// Used sparingly for emphasized text within regular body copy.
+@kb-force-font-weight-bold: 700;
+@kb-force-font-size-x-small: .625rem;
+@kb-force-font-size-small: .875rem;
+@kb-force-font-size-medium: 1rem;
+@kb-force-font-size-medium-a: 1.125rem;
+@kb-force-font-size-large: 1.25rem;
+@kb-force-font-size-x-large: 1.5rem;
+@kb-force-font-size-x-large-a: 1.57rem;
+@kb-force-font-size-xx-large: 2rem;
+// Extra extra small text.
+@kb-force-font-size-text-xx-small: .625rem;
+// Extra small body text.
+@kb-force-font-size-text-x-small: .75rem;
+// Small body text.
+@kb-force-font-size-text-small: .8125rem;
+// Medium body text.
+@kb-force-font-size-text-medium: 1rem;
+// Large body text.
+@kb-force-font-size-text-large: 1.125rem;
+// Extra large body text.
+@kb-force-font-size-text-x-large: 1.25rem;
+// Extra Extra small headings.
+@kb-force-font-size-heading-xx-small: .625rem;
+// Extra small headings.
+@kb-force-font-size-heading-x-small: .75rem;
+// Small headings.
+@kb-force-font-size-heading-small: .875rem;
+// Medium headings.
+@kb-force-font-size-heading-medium: 1.125rem;
+// Large headings.
+@kb-force-font-size-heading-large: 1.5rem;
+// Extra large headings.
+@kb-force-font-size-heading-x-large: 2rem;
+// Unitless line-heights for reusability
+@kb-force-line-height-heading: 1.25;
+// Unitless line-heights for reusability
+@kb-force-line-height-text: 1.375;
+// Remove extra leading. Unitless line-heights for reusability
+@kb-force-line-height-reset: 1;
+// Line heights for tabs
+@kb-force-line-height-tab: 2.5rem;
+// Deprecated: use FONT_FAMILY_TEXT instead for regular body text and FONT_FAMILY_HEADING for headings.
+@kb-force-font-family: 'Saleskb-force Sans', Arial, sans-serif;
+@kb-force-font-family-text: 'Saleskb-force Sans', Arial, sans-serif;
+@kb-force-font-family-heading: 'Saleskb-force Sans', Arial, sans-serif;
+@kb-force-border-radius-small: .125rem;
+// Icons in lists, record home icon, unbound input elements
+@kb-force-border-radius-medium: .25rem;
+@kb-force-border-radius-large: .5rem;
+@kb-force-border-radius-pill: 15rem;
+// Circle for global use, action icon bgd shape
+@kb-force-border-radius-circle: 50%;
+// Default border color for UI elements.
+@kb-force-color-border: rgb(229, 229, 229);
+// Our product brand blue.
+@kb-force-color-border-brand: rgb(21, 137, 238);
+// Our product brand blue, darkened to meet accessibility color contrast ratios with white text.
+@kb-force-color-border-brand-dark: rgb(0, 112, 210);
+// Border color for UI elements related to the concept of an external user or customer.
+@kb-force-color-border-customer: rgb(255, 154, 60);
+// Border color for UI elements that have to do with destructive actions.
+@kb-force-color-border-destructive: rgb(194, 57, 52);
+// Hover border color for UI elements that have to do with destructive actions.
+@kb-force-color-border-destructive-hover: rgb(166, 26, 20);
+// Active border color for UI elements that have to do with destructive actions.
+@kb-force-color-border-destructive-active: rgb(135, 5, 0);
+// Border color for UI elements related to providing neutral information (not error, success, or warning).
+@kb-force-color-border-info: rgb(84, 105, 141);
+// Border color for UI elements that have to do with errors.
+@kb-force-color-border-error: rgb(194, 57, 52);
+// Alternative border color for UI elements related to errors.
+@kb-force-color-border-error-alt: rgb(234, 130, 136);
+// Dark alternative border color for UI elements related to errors.
+@kb-force-color-border-error-dark: rgb(234, 130, 136);
+// Border color for UI elements related to the offline state.
+@kb-force-color-border-offline: rgb(68, 68, 68);
+// Border color for UI elements that have to do with success.
+@kb-force-color-border-success: rgb(75, 202, 129);
+// Dark alternative border color for UI elements that have to do with success.
+@kb-force-color-border-success-dark: rgb(4, 132, 75);
+// Border color for UI elements that have to do with warnings.
+@kb-force-color-border-warning: rgb(255, 183, 93);
+// Border color to match UI elements using color-background-inverse.
+@kb-force-color-border-inverse: rgb(6, 28, 63);
+// Border color for a selected tab in a tab group.
+@kb-force-color-border-tab-selected: rgb(0, 112, 210);
+// Border color for an active tab.
+@kb-force-color-border-tab-active: rgb(255, 255, 255);
+// Lightest separator color - used as default separator on white backgrounds.
+@kb-force-color-border-separator: rgb(244, 246, 249);
+// Medium separator color - used as default separator on light gray backgrounds.
+@kb-force-color-border-separator-alt: rgb(216, 221, 230);
+// Darkest separator color - used as an alternate separator color when more differentiation is desired.
+@kb-force-color-border-separator-alt-2: rgb(168, 183, 199);
+// Used as a separator on dark backgrounds, such as stage left navigation.
+@kb-force-color-border-separator-inverse: rgb(42, 66, 108);
+// Used as the border color for selected rows or items on list-like components.
+@kb-force-color-border-row-selected: rgb(0, 112, 210);
+// Used as the border color for the hover state on selected rows or items on list-like components.
+@kb-force-color-border-row-selected-hover: rgb(21, 137, 238);
+// Used to delineate the boundary of a specific region. Specific to builders.
+@kb-force-color-border-hint: rgb(42, 66, 108);
+// Used to delineate the boundary of a selected component. Specific to builders.
+@kb-force-color-border-selection: rgb(0, 112, 210);
+// Used to delineate the boundary of a component that is being hovered over. Specific to builders.
+@kb-force-color-border-selection-hover: rgb(21, 137, 238);
+// Used to delineate the boundary of a component that is being clicked. Specific to builders.
+@kb-force-color-border-selection-active: rgb(244, 246, 249);
+// Used to delineate the boundary of a selected canvas element. Specific to builders.
+@kb-force-color-border-canvas-element-selection: rgb(94, 180, 255);
+// Used to delineate the boundary of a selected canvas element that is being hovered over. Specific to builders.
+@kb-force-color-border-canvas-element-selection-hover: rgb(0, 95, 178);
+// Border color for a button with an icon that has a parent element that has a hover state
+@kb-force-color-border-icon-inverse-hint: rgba(255, 255, 255, .5);
+// Hovered border color for a button with an icon that has a parent element that has a hover state
+@kb-force-color-border-icon-inverse-hint-hover: rgba(255, 255, 255, .75);
+// Border color for brandable primary button
+@kb-force-color-border-button-brand: rgb(0, 112, 210);
+// Border color for brandable primary button - disabled state
+@kb-force-color-border-button-brand-disabled: rgba(0, 0, 0, 0);
+// Border color for default secondary button
+@kb-force-color-border-button-default: rgb(216, 221, 230);
+// Border color for disabled inverse button.
+@kb-force-color-border-button-inverse-disabled: rgba(255, 255, 255, .15);
+// Border color on form elements.
+@kb-force-color-border-input: rgb(216, 221, 230);
+// Border color on active form elements.
+@kb-force-color-border-input-active: rgb(21, 137, 238);
+// Border color on disabled form elements.
+@kb-force-color-border-input-disabled: rgb(168, 183, 199);
+// The borders to create the checkmark
+@kb-force-color-border-input-checkbox-selected-checkmark: rgb(255, 255, 255);
+// These borders create the faux checkmark when the checkbox toggle is in the checked state.
+@kb-force-color-border-toggle-checked: rgb(255, 255, 255);
+// Our product brand blue.
+@kb-force-color-stroke-brand: rgb(0, 112, 210);
+// Hover stroke color for our product brand blue.
+@kb-force-color-stroke-brand-hover: rgb(0, 112, 210);
+// Active stroke color for our product brand blue.
+@kb-force-color-stroke-brand-active: rgb(22, 50, 92);
+// Disabled stroke color.
+@kb-force-color-stroke-disabled: rgb(224, 229, 238);
+// Stroke color for our global header buttons.
+@kb-force-color-stroke-header-button: rgb(159, 170, 181);
+// Default background color for the whole app.
+@kb-force-color-background: rgb(243, 243, 243);
+//Background color for menubar
+@kb-force-menubar-color-background: rgb(255,255,255);
+// Second default background color for the app.
+@kb-force-color-background-alt: rgb(253, 253, 253);
+// Used when further differentiation is needed because colorBackground and colorBackgroundAlt are both being used in close proximity.
+@kb-force-color-background-alt-2: rgb(238, 241, 246);
+// Alternative background color for dark portions of the app.
+@kb-force-color-background-alt-inverse: rgb(22, 50, 92);
+// Used as the background color for the hover state on rows or items on list-like components.
+@kb-force-color-background-row-hover: rgb(244, 246, 249);
+// Used as the background color for the active state on rows or items on list-like components.
+@kb-force-color-background-row-active: rgb(238, 241, 246);
+// Used as the background color for selected rows or items on list-like components.
+@kb-force-color-background-row-selected: rgb(240, 248, 252);
+// Used as the background color for the new state on rows or items on list-like components.
+@kb-force-color-background-row-new: rgb(217, 255, 223);
+// Default background color for dark portions of the app (like Stage Left or tooltips).
+@kb-force-color-background-inverse: rgb(6, 28, 63);
+// Secondary top bar background color (child browser, file preview, etc.)
+@kb-force-color-background-browser: rgb(84, 105, 141);
+// Background color for default mobile chrome (ex. global header)
+@kb-force-color-background-chrome-mobile: rgb(0, 112, 210);
+// Background color for default desktop chrome (ex. global header)
+@kb-force-color-background-chrome-desktop: rgb(255, 255, 255);
+// Background color for UI elements related to the concept of an external user or customer.
+@kb-force-color-background-customer: rgb(255, 154, 60);
+// Background color for highlighting UI elements.
+@kb-force-color-background-highlight: rgb(250, 255, 189);
+// Background color for highlighting text in search results.
+@kb-force-color-background-highlight-search: rgb(255, 240, 63);
+// Background color for text selected with a mouse.
+@kb-force-color-background-selection: rgb(216, 237, 255);
+// Background for utility icons that live in the action bar on mobile.
+@kb-force-color-background-actionbar-icon-utility: rgb(84, 105, 141);
+// Color of the indicator dot.
+@kb-force-color-background-indicator-dot: rgb(22, 50, 92);
+// Color of the spinner dot.
+@kb-force-color-background-spinner-dot: rgb(159, 170, 181);
+// Standard modal header
+@kb-force-color-background-modal: rgb(255, 255, 255);
+// Brandable modal header
+@kb-force-color-background-modal-brand: rgb(0, 112, 210);
+// Notifications badge background color.
+@kb-force-color-background-notification-badge: rgb(194, 57, 52);
+// Notifications badge background color.
+@kb-force-color-background-notification-badge-hover: rgb(0, 95, 178);
+// Notifications badge background color.
+@kb-force-color-background-notification-badge-focus: rgb(0, 95, 178);
+// Notifications badge background color.
+@kb-force-color-background-notification-badge-active: rgb(0, 57, 107);
+// Background color for notification list item.
+@kb-force-color-background-notification: rgb(255, 255, 255);
+// Background color for a new notification list item.
+@kb-force-color-background-notification-new: rgb(240, 248, 252);
+// Stage left org switcher dropdown arrow background color.
+@kb-force-color-background-org-switcher-arrow: rgb(6, 28, 63);
+// Background color for payloads in the feed.
+@kb-force-color-background-payload: rgb(244, 246, 249);
+// Background color of comment posts in the feed.
+@kb-force-color-background-post: rgb(247, 249, 251);
+// Hover color for utility bar item.
+@kb-force-color-background-utility-bar-hover: rgb(224, 229, 238);
+// Active color for utility bar item.
+@kb-force-color-background-utility-bar-active: rgb(21, 137, 238);
+// Used as gray background when more contrast is desired.
+@kb-force-color-background-shade: rgb(224, 229, 238);
+// Used as gray background in conjunction with Shade when more contrast is desired.
+@kb-force-color-background-shade-dark: rgb(216, 221, 230);
+// Used as background for loading stencils on white background.
+@kb-force-color-background-stencil: rgb(238, 241, 246);
+// Used as an alternate background for loading stencils on gray backgrounds.
+@kb-force-color-background-stencil-alt: rgb(224, 229, 238);
+// Used as the default background color for temporary dialog elements, such as the progress spinner background.
+@kb-force-color-background-temp-modal: rgba(126, 140, 153, .8);
+// The color of the mask overlay that appears when you enter a modal state.
+@kb-force-color-background-temp-modal-tint: rgba(126, 140, 153, .8);
+// The color of the mask overlay that appears when you enter a modal state.
+@kb-force-color-background-temp-modal-tint-alt: rgba(255, 255, 255, .75);
+// The color of the mask overlay that appears when you enter a modal state.
+@kb-force-color-background-backdrop: rgba(255, 255, 255, .75);
+// The color of the mask overlay that provides user feedback on interaction.
+@kb-force-color-background-backdrop-tint: rgba(240, 248, 252, .75);
+// The background color of an internal scrollbar.
+@kb-force-color-background-scrollbar: rgb(224, 229, 238);
+// The background color of an internal scrollbar track.
+@kb-force-color-background-scrollbar-track: rgb(168, 183, 199);
+// Our product brand blue.
+@kb-force-color-brand: rgb(21, 137, 238);
+// Our product brand blue, darkened to meet accessibility color contrast ratios with white text.
+@kb-force-color-brand-dark: rgb(0, 112, 210);
+// Our product brand blue, darkened even further.
+@kb-force-color-brand-darker: rgb(0, 95, 178);
+// Toggle background color.
+@kb-force-color-background-toggle: rgb(159, 170, 181);
+// Disabled toggle background color.
+@kb-force-color-background-toggle-disabled: rgb(159, 170, 181);
+// Hovered toggle background color.
+@kb-force-color-background-toggle-hover: rgb(126, 140, 153);
+// Active toggle background color.
+@kb-force-color-background-toggle-active: rgb(0, 112, 210);
+// Hovered active toggle background color.
+@kb-force-color-background-toggle-active-hover: rgb(0, 95, 178);
+// Button backgrounds on modal headers
+@kb-force-color-background-modal-button: rgba(0, 0, 0, .07);
+// Active button backgrounds on modal headers
+@kb-force-color-background-modal-button-active: rgba(0, 0, 0, .16);
+// Default input field
+@kb-force-color-background-input: rgb(255, 255, 255);
+// Selected input field (when user has clicked or tabbed into field)
+@kb-force-color-background-input-active: rgb(255, 255, 255);
+// Default checkboxes
+@kb-force-color-background-input-checkbox: rgb(255, 255, 255);
+// Disabled checkboxes
+@kb-force-color-background-input-checkbox-disabled: rgb(216, 221, 230);
+// Selected checkboxes
+@kb-force-color-background-input-checkbox-selected: rgb(21, 137, 238);
+// Disabled input
+@kb-force-color-background-input-disabled: rgb(224, 229, 238);
+// Background color for input field that has encountered an error.
+@kb-force-color-background-input-error: rgb(255, 221, 225);
+// Background color for search input fields.
+@kb-force-color-background-input-search: rgba(0, 0, 0, .16);
+// Background color for pills.
+@kb-force-color-background-pill: rgb(255, 255, 255);
+// Color of mask overlay that sits on top of an image when text is present.
+@kb-force-color-background-image-overlay: rgba(0, 0, 0, .4);
+// Color for UI elements related to destructive actions.
+@kb-force-color-background-destructive: rgb(194, 57, 52);
+// Hover color for UI elements related to destructive actions.
+@kb-force-color-background-destructive-hover: rgb(166, 26, 20);
+// Active color for UI elements related to destructive actions.
+@kb-force-color-background-destructive-active: rgb(135, 5, 0);
+// Background color for UI elements related to providing neutral information (not error, success, or warning).
+@kb-force-color-background-info: rgb(84, 105, 141);
+// Color for UI elements related to errors.
+@kb-force-color-background-error: rgb(212, 80, 76);
+// Dark color for UI elements related to errors. Accessible with white text.
+@kb-force-color-background-error-dark: rgb(194, 57, 52);
+// Alternative color for UI elements related to errors.
+@kb-force-color-background-error-alt: rgb(234, 130, 136);
+// Color for UI elements related to the offline state.
+@kb-force-color-background-offline: rgb(68, 68, 68);
+// Color for UI elements that have to do with success.
+@kb-force-color-background-success: rgb(75, 202, 129);
+// Dark color for UI elements that have to do with success. Accessible with white text.
+@kb-force-color-background-success-dark: rgb(4, 132, 75);
+// Background color for toast messaging.
+@kb-force-color-background-toast: rgba(84, 105, 141, .95);
+// Background color for success toast messaging.
+@kb-force-color-background-toast-success: rgb(4, 132, 75);
+// Background color for error toast messaging.
+@kb-force-color-background-toast-error: rgba(194, 57, 52, .95);
+// Color for UI elements that have to do with warning.
+@kb-force-color-background-warning: rgb(255, 183, 93);
+// Background color for success buttons
+@kb-force-color-background-button-success: rgb(75, 202, 129);
+// Hovered background color for success buttons
+@kb-force-color-background-button-success-hover: rgb(4, 132, 75);
+// Active background color for success buttons
+@kb-force-color-background-button-success-active: rgb(4, 132, 75);
+// Shadow above overflow menu close bar.
+@kb-force-shadow-action-overflow-footer: 0 -2px 4px #F4F6F9;
+// Shadow for overlays.
+@kb-force-shadow-overlay: 0 -2px 4px rgba(0, 0, 0, .07);
+// Shadow for drag-n-drop.
+@kb-force-shadow-drag: 0 2px 4px 0 rgba(0, 0, 0, .4);
+// Shadow for drop down.
+@kb-force-shadow-drop-down: 0 2px 3px 0 rgba(0, 0, 0, .16);
+// Shadow for header.
+@kb-force-shadow-header: 0 2px 4px rgba(0, 0, 0, .07);
+// Shadow for buttons.
+@kb-force-shadow-button: 0 1px 1px 0 rgba(0, 0, 0, .05);
+// Custom glow for focus states on UI elements with explicit containers.
+@kb-force-shadow-button-focus: 0 0 3px #0070D2;
+// Custom glow for focus states on UI elements with explicit containers on dark or vibrantly colored backgrounds.
+@kb-force-shadow-button-focus-inverse: 0 0 3px #E0E5EE;
+// Shadow to make inline edit card pop out.
+@kb-force-shadow-inline-edit: 0 2px 4px 4px rgba(0, 0, 0, .16);
+// Inset shadow for editable grid
+@kb-force-shadow-focus-inset: 0 0 2px 2px #1589EE inset;
+// Shadow on elements that are docked to the bottom of the viewport.
+@kb-force-shadow-docked: 0 -2px 2px 0 rgba(0, 0, 0, .16);
+// Shadow on images.
+@kb-force-shadow-image: 0 1px 1px rgba(0, 0, 0, .16);
+// Deprecated
+@kb-force-elevation-3-inset: -3;
+// Deprecated
+@kb-force-elevation-0: 0;
+// Deprecated
+@kb-force-elevation-2: 2;
+// Deprecated
+@kb-force-elevation-4: 4;
+// Deprecated
+@kb-force-elevation-8: 8;
+// Deprecated
+@kb-force-elevation-16: 16;
+// Deprecated
+@kb-force-elevation-32: 32;
+// Deprecated
+@kb-force-elevation-shadow-3-below: 0 3px 3px 0 rgba(0, 0, 0, .16) inset;
+// Deprecated
+@kb-force-elevation-shadow-0: none;
+// Deprecated
+@kb-force-elevation-shadow-2: 0 2px 2px 0 rgba(0, 0, 0, .16);
+// Deprecated
+@kb-force-elevation-shadow-4: 0 4px 4px 0 rgba(0, 0, 0, .16);
+// Deprecated
+@kb-force-elevation-shadow-8: 0 8px 8px 0 rgba(0, 0, 0, .16);
+// Deprecated
+@kb-force-elevation-shadow-16: 0 16px 16px 0 rgba(0, 0, 0, .16);
+// Deprecated
+@kb-force-elevation-shadow-32: 0 32px 32px 0 rgba(0, 0, 0, .16);
+// Deprecated
+@kb-force-elevation-inverse-shadow-3-below: 0 -3px 3px 0 rgba(0, 0, 0, .16) inset;
+// Deprecated
+@kb-force-elevation-inverse-shadow-0: none;
+// Deprecated: Use SHADOW_DOCKED
+@kb-force-elevation-inverse-shadow-2: 0 -2px 2px 0 rgba(0, 0, 0, .16);
+// Deprecated
+@kb-force-elevation-inverse-shadow-4: 0 -4px 4px 0 rgba(0, 0, 0, .16);
+// Deprecated
+@kb-force-elevation-inverse-shadow-8: 0 -8px 8px 0 rgba(0, 0, 0, .16);
+// Deprecated
+@kb-force-elevation-inverse-shadow-16: 0 -16px 16px 0 rgba(0, 0, 0, .16);
+// Deprecated
+@kb-force-elevation-inverse-shadow-32: 0 -32px 32px 0 rgba(0, 0, 0, .16);
+// Action label text color
+@kb-force-color-text-action-label: rgb(84, 105, 141);
+// Action label active text color
+@kb-force-color-text-action-label-active: rgb(22, 50, 92);
+// Our product brand blue.
+@kb-force-color-text-brand: rgb(21, 137, 238);
+// Top bar icon color
+@kb-force-color-text-browser: rgb(255, 255, 255);
+// Top bar active icon color
+@kb-force-color-text-browser-active: rgba(0, 0, 0, .4);
+// Customer text used in anchor subtitle
+@kb-force-color-text-customer: rgb(255, 154, 60);
+// Body text color
+@kb-force-color-text-default: rgb(22, 50, 92);
+// Error text for inputs and error misc
+@kb-force-color-text-error: rgb(194, 57, 52);
+// Input disabled text
+@kb-force-color-text-input-disabled: rgb(84, 105, 141);
+// Typed input text
+@kb-force-color-text-input-focus-inverse: rgb(22, 50, 92);
+// Input icon
+@kb-force-color-text-input-icon: rgb(159, 170, 181);
+// Inverse text color for dark backgrounds
+@kb-force-color-text-inverse: rgb(255, 255, 255);
+// Weak inverse text color for dark backgrounds
+@kb-force-color-text-inverse-weak: rgb(159, 170, 181);
+// Active state on a standalone link on a dark background.
+@kb-force-color-text-inverse-active: rgb(94, 180, 255);
+// Hover state on a standalone link on a dark background.
+@kb-force-color-text-inverse-hover: rgb(159, 170, 181);
+// Link text (508)
+@kb-force-color-text-link: rgb(0, 112, 210);
+// Active link text
+@kb-force-color-text-link-active: rgb(0, 57, 107);
+// Disabled link text
+@kb-force-color-text-link-disabled: rgb(22, 50, 92);
+// Focus link text
+@kb-force-color-text-link-focus: rgb(0, 95, 178);
+// Hover link text
+@kb-force-color-text-link-hover: rgb(0, 95, 178);
+// Link color on dark background
+@kb-force-color-text-link-inverse: rgb(255, 255, 255);
+// Link color on dark background - hover state
+@kb-force-color-text-link-inverse-hover: rgba(255, 255, 255, .75);
+// Link color on dark background - active state
+@kb-force-color-text-link-inverse-active: rgba(255, 255, 255, .5);
+// Link color on dark background - disabled state
+@kb-force-color-text-link-inverse-disabled: rgba(255, 255, 255, .15);
+// Modal header title
+@kb-force-color-text-modal: rgb(255, 255, 255);
+// Modal header button text color
+@kb-force-color-text-modal-button: rgb(84, 105, 141);
+// Text in stage left navigation.
+@kb-force-color-text-stage-left: rgb(224, 229, 238);
+// Color for default text in a tab group.
+@kb-force-color-text-tab-label: rgb(22, 50, 92);
+// Color for text on a selected tab in a tab group.
+@kb-force-color-text-tab-label-selected: rgb(0, 112, 210);
+// Color for text in hover state in a tab group.
+@kb-force-color-text-tab-label-hover: rgb(0, 95, 178);
+// Color for text in focus state in a tab group.
+@kb-force-color-text-tab-label-focus: rgb(0, 95, 178);
+// Color for text in active state in a tab group.
+@kb-force-color-text-tab-label-active: rgb(0, 57, 107);
+// Color for disabled text in a tab group.
+@kb-force-color-text-tab-label-disabled: rgb(224, 229, 238);
+// Color for text on toast messages.
+@kb-force-color-text-toast: rgb(224, 229, 238);
+// Color for texts or icons that are related to warnings on a dark background.
+@kb-force-color-text-warning: rgb(255, 183, 93);
+// Color for texts that are related to warnings on a light background.
+@kb-force-color-text-warning-alt: rgb(132, 72, 0);
+// Color for text that is purposefully de-emphasized to create visual hierarchy.
+@kb-force-color-text-weak: rgb(84, 105, 141);
+// Color for non-interactive icons that represent a selected item in a list
+@kb-force-color-text-icon-brand: rgb(0, 112, 210);
+// Color for interactive utility icons
+@kb-force-color-text-icon-utility: rgb(159, 170, 181);
+// Color for disabled toggles
+@kb-force-color-text-toggle-disabled: rgb(216, 221, 230);
+//Toolbar border bottom thin
+@kb-force-toolbar-border-width-thin: 1px;
+//Toolbar border bottom 
+@kb-force-toolbar-border-buttom: rgb(229, 229, 229);
+//Toolbar button background collor
+@kb-force-toolbar-button-background-color: rgb(255, 255, 255);
+//Toolbar button width 
+@kb-force-toolbar-button-width: 32px;
+//Toolbar button width 
+@kb-force-toolbar-button-height: 32px;
+//Toolbar button border color
+@kb-force-toolbar-button-border-color: rgb(201,201,201);
+//Toolbar button border pixel
+@kb-force-toolbar-button-border: .25rem;
+//Toolbar button border radius
+@kb-force-toolbar-button-border-radius: .25rem;
+// Text color for brandable primary button
+@kb-force-color-text-button-brand: rgb(255, 255, 255);
+// Text color for brandable primary button - hover state
+@kb-force-color-text-button-brand-hover: rgb(255, 255, 255);
+// Text color for brandable primary button - active state
+@kb-force-color-text-button-brand-active: rgb(255, 255, 255);
+// Text color for brandable primary button - disabled state
+@kb-force-color-text-button-brand-disabled: rgb(255, 255, 255);
+// Text color for default secondary button
+@kb-force-color-text-button-default: rgb(0, 112, 210);
+// Text color for default secondary button - hover state
+@kb-force-color-text-button-default-hover: rgb(0, 112, 210);
+// Text color for default secondary button - active state
+@kb-force-color-text-button-default-active: rgb(0, 112, 210);
+// Text color for default secondary button - disabled state
+@kb-force-color-text-button-default-disabled: rgb(216, 221, 230);
+// Text color for a button that has a parent element that has a hover state. This is the default text/icon color for that button before its parent has been hovered over.
+@kb-force-color-text-button-default-hint: rgb(159, 170, 181);
+// Text color for a button that has a parent element that has a hover state. This is the default text/icon color for that button before its parent has been hovered over.
+@kb-force-color-text-button-inverse: rgb(224, 229, 238);
+// Text color for a button that has a parent element that has a hover state. This is the default text/icon color for that button before its parent has been hovered over.
+@kb-force-color-text-button-inverse-disabled: rgba(255, 255, 255, .15);
+// Default icon color.
+@kb-force-color-text-icon-default: rgb(84, 105, 141);
+// Icon color for a button that has a parent element that has a hover state. This is the default text/icon color for that button before its parent has been hovered over.
+@kb-force-color-text-icon-default-hint: rgb(159, 170, 181);
+// Icon color for a button that has a parent element that has a hover state on a dark background. This is the default text/icon color for that button before its parent has been hovered over.
+@kb-force-color-text-icon-inverse-hint: rgba(255, 255, 255, .5);
+// Icon color for a button that has a parent element that has a hover state. This is the default text/icon color for that button before its parent has been hovered over.
+@kb-force-color-text-icon-default-hint-borderless: rgb(224, 229, 238);
+// Default icon color - hover state.
+@kb-force-color-text-icon-default-hover: rgb(0, 112, 210);
+// Default icon color - active state.
+@kb-force-color-text-icon-default-active: rgb(0, 57, 107);
+// Default icon color - disabled state
+@kb-force-color-text-icon-default-disabled: rgb(216, 221, 230);
+// Icon color on dark background
+@kb-force-color-text-icon-inverse: rgb(255, 255, 255);
+// Icon color on dark background - hover state
+@kb-force-color-text-icon-inverse-hover: rgb(255, 255, 255);
+// Icon color on dark background - active state
+@kb-force-color-text-icon-inverse-active: rgb(255, 255, 255);
+// Icon color on dark background - disabled state
+@kb-force-color-text-icon-inverse-disabled: rgba(255, 255, 255, .15);
+// Hovered icon color for a button that has a parent element that has a hover state
+@kb-force-color-text-icon-inverse-hint-hover: rgba(255, 255, 255, .75);
+// Text color for field labels.
+@kb-force-color-text-label: rgb(84, 105, 141);
+// Input placeholder text.
+@kb-force-color-text-placeholder: rgb(84, 105, 141);
+// Input placeholder text on dark backgrounds.
+@kb-force-color-text-placeholder-inverse: rgb(224, 229, 238);
+// Color of required field marker.
+@kb-force-color-text-required: rgb(194, 57, 52);
+// Text color for pills.
+@kb-force-color-text-pill: rgb(0, 112, 210);
+// Text color for success text.
+@kb-force-color-text-success: rgb(2, 128, 72);
+// Text color for success text on dark backgrounds.
+@kb-force-color-text-success-inverse: rgb(75, 202, 129);
+// Default value for text-transform
+@kb-force-text-transform: none;
+// 50% transparency of an element
+@kb-force-opacity-5: .5;
+// 80% transparency of an element
+@kb-force-opacity-8: .8;
+// 0 seconds, 0 frames
+@kb-force-duration-instantly: 0s;
+// .05 seconds, 3 frames
+@kb-force-duration-immediately: .05s;
+// .1 seconds, 6 frames
+@kb-force-duration-quickly: .1s;
+// .2 seconds, 12 frames
+@kb-force-duration-promptly: .2s;
+// .4 seconds, 24 frames
+@kb-force-duration-slowly: .4s;
+// 3.2 seconds, 192 frames
+@kb-force-duration-paused: 3.2s;
+// 4.8 seconds
+@kb-force-duration-toast-short: 4.8s;
+// 9.6 seconds
+@kb-force-duration-toast-medium: 9.6s;
+// Toasts
+@kb-force-z-index-toast: 10000;
+// Modal
+@kb-force-z-index-modal: 9000;
+// Overlay
+@kb-force-z-index-overlay: 8000;
+// Dropdown
+@kb-force-z-index-dropdown: 7000;
+// Dialog
+@kb-force-z-index-dialog: 6000;
+// Popup
+@kb-force-z-index-popup: 5000;
+// Stickied element
+@kb-force-z-index-sticky: 100;
+// Default
+@kb-force-z-index-default: 1;
+// Docked element
+@kb-force-z-index-docked: 4;
+// Deep dive
+@kb-force-z-index-deepdive: -99999;
+// Brandable primary button
+@kb-force-color-background-button-brand: rgb(0, 112, 210);
+// Brandable primary button - active state
+@kb-force-color-background-button-brand-active: rgb(0, 57, 107);
+// Brandable primary button - hover state
+@kb-force-color-background-button-brand-hover: rgb(0, 95, 178);
+// Brandable primary button - disabled state
+@kb-force-color-background-button-brand-disabled: rgb(224, 229, 238);
+// Default secondary button
+@kb-force-color-background-button-default: rgb(255, 255, 255);
+// Default secondary button - hover state
+@kb-force-color-background-button-default-hover: rgb(244, 246, 249);
+// Default secondary button - focus state
+@kb-force-color-background-button-default-focus: rgb(244, 246, 249);
+// Default secondary button - active state
+@kb-force-color-background-button-default-active: rgb(238, 241, 246);
+// Default secondary button - disabled state
+@kb-force-color-background-button-default-disabled: rgb(255, 255, 255);
+// Background color for icon-only button
+@kb-force-color-background-button-icon: rgba(0, 0, 0, 0);
+// Background color for icon-only button - hover state
+@kb-force-color-background-button-icon-hover: rgb(244, 246, 249);
+// Background color for icon-only button - focus state
+@kb-force-color-background-button-icon-focus: rgb(244, 246, 249);
+// Background color for icon-only button - active state
+@kb-force-color-background-button-icon-active: rgb(238, 241, 246);
+// Background color for icon-only button - disabled state
+@kb-force-color-background-button-icon-disabled: rgb(255, 255, 255);
+// Button backgrounds on inverse/dark backgrounds
+@kb-force-color-background-button-inverse: rgba(0, 0, 0, 0);
+// Active button backgrounds on inverse backgrounds on mobile
+@kb-force-color-background-button-inverse-active: rgba(0, 0, 0, .24);
+// Disabled button backgrounds on inverse/dark backgrounds
+@kb-force-color-background-button-inverse-disabled: rgba(0, 0, 0, 0);
+// Line heights for regular buttons
+@kb-force-line-height-button: 1.875rem;
+// Line heights for small buttons
+@kb-force-line-height-button-small: 1.75rem;
+// Default Card component background color.
+@kb-force-card-color-background: rgb(255, 255, 255);
+@kb-force-card-spacing-small: .75rem;
+@kb-force-card-spacing-medium: 1rem;
+@kb-force-card-spacing-large: 1.5rem;
+// Line heights for toggle buttons
+@kb-force-line-height-toggle: 1.3rem;
+// Slider size for toggle.
+@kb-force-square-toggle-slider: 1.25rem;
+// Slider width.
+@kb-force-width-toggle: 3rem;
+// Slider height.
+@kb-force-height-toggle: 1.5rem;
+@kb-force-table-spacing-x-small: .5rem;
+// Docked panel header’s background color.
+@kb-force-color-background-docked-panel-header: rgb(247, 249, 251);
+// Height of the docked bar.
+@kb-force-height-docked-bar: 2.5rem;
+// Utility bar notifications badge background color.
+@kb-force-utility-bar-color-background-notification-badge: rgb(212, 80, 76);
+// Utility bar notifications focus background color.
+@kb-force-utility-bar-color-background-notification-focus: rgb(168, 183, 199);
+// Default color for animated icon waffle for app switcher.
+@kb-force-color-background-icon-waffle: rgb(84, 105, 141);
+// Global identity icon size.
+@kb-force-square-icon-global-identity-icon: 1.25rem;
+// Default context bar background color.
+@kb-force-color-background-context-bar: rgb(255, 255, 255);
+// Brand color in context bar for default theme
+@kb-force-color-background-context-bar-brand-accent: rgb(0, 161, 223);
+// Hovered context bar item background color.
+@kb-force-color-background-context-bar-item-hover: rgb(247, 249, 251);
+// Active context bar item background color.
+@kb-force-color-background-context-bar-item-active: rgb(247, 249, 251);
+// Context TAB bar item background color.
+@kb-force-color-background-context-tab-bar-item: rgb(255, 255, 255);
+// Hovered context bar item background color.
+@kb-force-color-background-context-bar-inverse-item-hover: rgba(255, 255, 255, .2);
+// Active context bar item background color.
+@kb-force-color-background-context-bar-inverse-item-active: rgba(255, 255, 255, .4);
+// A Gradient used for putting shadows on the bottom when box-shadow is not possible.
+@kb-force-color-background-context-bar-shadow: linear-gradient(to bottom, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, 0) 100%);
+// Highlight for context bar action (hover and focus states).
+@kb-force-color-background-context-bar-action-highlight: rgba(255, 255, 255, .2);
+// Divider in context bar
+@kb-force-color-border-context-bar-divider: rgba(255, 255, 255, .2);
+// Border color in context bar
+@kb-force-color-border-context-bar-item: rgba(0, 0, 0, .2);
+// Border color in context bar on dark background
+@kb-force-color-border-context-bar-inverse-item: rgba(255, 255, 255, .2);
+// Border color in context bar for default theme
+@kb-force-color-border-context-bar-theme-default: rgb(0, 161, 223);
+// Alternate border color in context bar for default theme
+@kb-force-color-border-context-bar-theme-default-alt: rgb(228, 233, 243);
+// Hovered border color in context bar for default theme
+@kb-force-color-border-context-bar-theme-default-hover: rgb(11, 35, 153);
+// Active border color in context bar for default theme
+@kb-force-color-border-context-bar-theme-default-active: rgb(228, 233, 243);
+// Context bar height.
+@kb-force-height-context-bar: 2.5rem;
+// Context bar text color
+@kb-force-color-text-context-bar: rgb(84, 105, 141);
+// Context bar text color on a dark background
+@kb-force-color-text-context-bar-inverse: rgb(255, 255, 255);
+// Context bar action trigger text color
+@kb-force-color-text-context-bar-action-trigger: rgba(255, 255, 255, .4);
+// Use COLOR_BACKGROUND_PAGE_HEADER instead.
+@kb-force-color-background-anchor: rgb(244, 246, 249);
+// Page Header background color
+@kb-force-color-background-page-header: rgb(247, 249, 251);
+// The background color for Salespath stages that are complete.
+@kb-force-color-background-path-complete: rgb(75, 202, 129);
+// The hover background color for Salespath stages that are complete.
+@kb-force-color-background-path-complete-hover: rgb(4, 132, 75);
+// The background color for Salespath stages that are the current stage.
+@kb-force-color-background-path-current: rgb(0, 112, 210);
+// The hover background color for Salespath stages that are the current stage.
+@kb-force-color-background-path-current-hover: rgb(0, 95, 178);
+// The background color for Salespath stages that have not been completed.
+@kb-force-color-background-path-incomplete: rgb(224, 229, 238);
+// The hover background color for Salespath stages that have not been completed.
+@kb-force-color-background-path-incomplete-hover: rgb(216, 221, 230);
+// The background color for the final stage of a Salespath when it has been lost.
+@kb-force-color-background-path-lost: rgb(194, 57, 52);
+// The background color for Salespath guidance coaching section.
+@kb-force-color-background-guidance: rgb(250, 250, 251);
+// Used as a separator between dark colors like the stages of salespath.
+@kb-force-color-border-path-divider: rgb(255, 255, 255);
+// Line heights for salespath
+@kb-force-line-height-salespath: 1.5rem;
+// Height of Salespath
+@kb-force-height-sales-path: 2rem;
+// The default background color for Progress Indicator
+@kb-force-progress-color-background: rgb(255, 255, 255);
+// The shaded background color for Progress Indicator
+@kb-force-progress-color-background-shade: rgb(244, 246, 249);
+// The background color for the Progress Bar
+@kb-force-progress-bar-color-background: rgb(216, 221, 230);
+// The background color of the fill for the Progess Bar
+@kb-force-progress-bar-color-background-fill: rgb(94, 180, 255);
+// Borders of each indicator item within the Progress Indicator
+@kb-force-progress-color-border: rgb(255, 255, 255);
+// Shaded borders of each indicator item within the Progress Indicator
+@kb-force-progress-color-border-shade: rgb(244, 246, 249);
+// Hovered border color of each indicator item within the Progress Indicator
+@kb-force-progress-color-border-hover: rgb(0, 112, 210);
+// Active border color of each indicator item within the Progress Indicator
+@kb-force-progress-color-border-active: rgb(21, 137, 238);
+// Height of the Progress Bar
+@kb-force-progress-bar-height: .125rem;
+// Split View background color.
+@kb-force-split-view-color-background: rgb(228, 233, 243);
+// Split View background color on row hover.
+@kb-force-split-view-color-background-row-hover: rgb(238, 241, 246);
+// Row dividers in Split View list
+@kb-force-split-view-color-border: rgb(206, 213, 225);
+// Vertical navigation shaded background color on row hover.
+@kb-force-vertical-navigation-color-background-shade-row-hover: rgb(238, 241, 246);
+// Vertical navigation shaded background color on row active.
+@kb-force-vertical-navigation-color-background-shade-row-active: rgb(232, 236, 243);
