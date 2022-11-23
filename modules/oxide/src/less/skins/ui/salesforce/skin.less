@@ -76,18 +76,18 @@
   .tox-collection--list .tox-collection__item--active{
     background-color: #f3f3f3;
   }
+  
   .tox-collection--list .tox-collection__item--enabled{
-    background-color: none !important;
+    background: none;
   }
 
   .tox-collection__item-label{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    font-size: 13px;//??
+    font-size: 13px;
   }
 
   .tox-mbtn:focus:not(:disabled),
   .tox-mbtn:hover:not(:disabled),
-  .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active),
   .tox-collection__item:hover:not(:disabled) {
     background: #f3f3f3;
     border: 0;
@@ -157,7 +157,7 @@
       fill: #014486;
     }
   }
-
+//Dialog styling
   .tox-dialog {
     position: relative !important;
     border-radius: .25rem !important;
@@ -166,8 +166,10 @@
     z-index: 6000 !important;
     background-color: rgb(255, 255, 255) !important;
     // display: inline-block !important;
-    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 16%) !important;
-    border: 1px solid rgb(229, 229, 229) !important;
+    // box-shadow: 0 2px 3px 0 rgb(0 0 0 / 16%) !important;
+    // border: 1px solid rgb(229, 229, 229) !important;
+    box-shadow: 0 !important;
+    border: 0 !important;
   }
 
   .tox-dialog .tox-dialog__header,
@@ -212,15 +214,7 @@
   }
 
   .tox .tox-dialog-wrap__backdrop{
-    background-color: rgba(8, 7, 7, 0.6);
-  }
-
-//Dialog or Modal styling
-
-  .tox-dialog {
-    // display: inline-block !important;
-    box-shadow: 0 !important;
-    border: 0 !important;
+    background-color: rgba(8, 7, 7, .6);
   }
 
   .tox-dialog__body-content .tox-form input[type=text],
